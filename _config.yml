@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   I enjoy living. I try to see positivity in everything. Sarcastic most of the time and coding the rest. Love music and cannot live without it. I love traveling and food. If I have a good thought, I write it down here.
 disclaimer: >
   This blog, its content and opinions are my own and does not reflect the opinions of my employer.
-baseurl: "/blog" # the subpath of your site, e.g. /blog/
+baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://vishnupadmanabhan.com" # the base hostname & protocol for your site
 twitter_username: neoelemento
 github_username:  neoelemento
