@@ -1,0 +1,58 @@
+---
+layout: default
+---
+<main>
+  <div class="blog">
+    <img class="responsive-img" src="http://res.cloudinary.com/neoelemento/image/upload/v1483247831/blog/rocket.svg" width="100%">
+    <div class="container">
+      <div class="row">
+        <div class="col m12">
+          {% for post in paginator.posts %}
+            <div class="col l6 m6 s12">  
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                <div class="card grey lighten-4">
+                  <div class="card-content">
+                    <span class="card-title">{{ post.title }}</span>
+                    <p class="post-excerpt">{{ post.excerpt }}</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Posted on: {{ post.date | date: "%b %-d, %Y" }}</a>
+                  </div>
+                </div>
+              </a> 
+            </div>           
+          {% endfor %}          
+        </div> 
+          
+        <div class="col m12">
+          <!-- pagination -->
+          {% if paginator.total_pages > 1 %}
+            <div class="pagination center-align">
+              {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+              {% else %}
+                <span>&laquo; Prev</span>
+              {% endif %}
+
+              {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                  <em>{{ page }}</em>
+                {% elsif page == 1 %}
+                  <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                {% else %}
+                  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                {% endif %}
+              {% endfor %}
+
+              {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+              {% else %}
+                <span>Next &raquo;</span>
+              {% endif %}
+            </div>
+          {% endif %}     
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

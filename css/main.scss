@@ -1,0 +1,506 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: 'josefin_sansregular', sans-serif;
+$content-font-family: 'Raleway', sans-serif;
+$base-font-size:   11px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+$font-serif: 'Adobe Caslon Pro', Georgia, serif;
+$font-serif-secondary: 'Merriweather', Georgia, serif;
+$font-monospace: 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace;
+
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+$base-color: #42b983;
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "fonts",
+        "layout",
+        "syntax-highlighting",
+        "materialize"
+;
+
+// style the pre tags
+
+pre, code {
+    border: 1px dashed #e5e5e5;
+    border-radius: 0px;
+    font-size: 1rem;
+    // white-space: pre-wrap;
+ 	// word-wrap: break-word;
+    font-family: $font-monospace;
+}
+
+p code {
+    font-size: 1rem;
+    padding: 1px;
+    //background-color: #dedede;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+
+a, a:visited, a:active, a:hover {
+    color: $base-color;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: 700;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: $base-font-family;
+    background-color: #fff !important;
+    font-size: $base-font-size;
+    -webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+main {
+    flex: 1 0 auto;    
+}
+
+.blog {
+    margin-top: -70px;
+    
+    .container {
+        margin-top: 50px;
+    }
+}
+
+blockquote {
+    font-size: 1.7em;
+    line-height: 2em;
+    font-style: normal;
+}
+
+a:active {
+    outline: none;
+}
+
+nav {
+    background: transparent !important;
+}
+
+.nav-color {
+    // background-color: #1b1b25;
+    background: transparent;
+    box-shadow: none;
+}
+
+.nav-side-color {
+    background-color: #FFF;
+    box-shadow: none;
+}
+
+nav a {
+    font-weight: 700;
+    font-size: 1.4rem !important;
+    color: $base-color !important;
+    text-decoration: none;
+    text-transform: lowercase;
+
+    &:hover, &:active {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+// .nav-wrapper {
+//     box-shadow: 0 0 4px rgba(0,0,0,0.25);
+// }
+
+.brand-logo {
+    font-family: 'josefin_sansregular', sans-serif;
+    color: $base-color;
+    font-size: 2.1rem !important;
+}
+
+.side-nav li a {
+    color: $base-color !important;
+    text-transform: lowercase;
+}
+
+footer.page-footer {
+  margin-top: 0;
+  color: #efefef;
+  background: #151515;
+}
+
+.parallax-container {
+    height: 450px;
+    margin-bottom: 0;
+}
+
+.banner {
+    background: #2BA3D4;
+    height: 101vh;
+}
+
+.banner-wrapper {
+    height: 600px !important;
+    min-height: 100%;
+    width: 100%;
+}
+
+.banner-content {
+    text-align: center;
+    position: relative;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+.banner-content h1 {
+    color: #fff;
+    font-weight: 100;
+}
+
+.blog-title {
+    text-transform: lowercase;
+    font-weight: 300;
+    color: #AEAEAE;
+    font-size: 3.5em;
+}
+
+h2.post-title-main, h2.post-title-main:visited {
+	font-weight: 400;
+    color: $base-color;
+    font-size: 2rem;
+    font-family: "josefin_sansbold", sans-serif;
+}
+
+h2.post-title-main:hover {
+    text-decoration: underline;
+    color: $base-color;
+}
+
+.pagination {
+    font-size: 1.4rem;
+
+    a {
+        padding: 5px;
+        margin-right: 5px;        
+    }
+
+    em {
+        padding: 5px;
+        margin-right: 5px;
+    }
+}
+
+h1.post-title {
+    font-weight: 500;
+    color: #FFF;
+    font-size: 3rem;
+    margin-top: -200px;
+    font-family: "josefin_sansbold", sans-serif;
+    word-spacing: .75rem;
+    text-transform: uppercase;
+}
+
+.post-meta {
+    font-weight: 400;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-family: "josefin_sansbold", sans-serif;
+}
+
+article.post-content {
+    margin-top: 125px;
+    margin-bottom: 45px;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    color: #393939;
+    font-family: $font-serif;    
+    
+    h1 {
+        font-size: 3.2rem;
+        font-weight: 500;
+        font-family: 'josefin_sansbold', sans-serif;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+        font-weight: 500;
+        font-family: 'josefin_sansbold', sans-serif;
+    }
+
+    h3 {
+      font-family: 'josefin_sansbold', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 500;
+    }
+    
+    h4 {
+      font-family: 'josefin_sansbold', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+    
+    h5 {
+      font-family: 'josefin_sansbold', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+    
+    p {
+        word-spacing: .3rem;
+    }
+
+    &>p:first-of-type {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &>p:first-of-type::first-letter {
+        float: left;
+        font-size: 9rem;
+        font-weight: 700;
+        line-height: 50px;
+        margin: 3rem .5rem -.8rem .2rem;
+        line-height: 60px;
+        color: $base-color;
+    }
+
+    img {
+        border: none;
+        margin: 30px auto;
+    }
+
+    ul li {
+        list-style-type: square;
+    }
+    
+    a, a:visited, a:active, a:hover {
+        font-weight: 500;
+    }
+
+    blockquote {
+      font-family: $content-font-family;
+      font-weight: 300;
+      font-size: 1.4rem;
+      border-left: 5px solid $base-color;
+
+      strong {
+          font-weight: 500;
+      }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    // styles for small screens and down
+    h1.post-title {
+        font-weight: 500;
+        color: #212121;
+        font-size: 3.2rem;
+        margin-top: 30px;
+        font-family: "josefin_sansbold", sans-serif;
+        word-spacing: .75rem;
+        text-transform: uppercase;
+    }
+    
+    .post-meta {
+        font-weight: 400;
+        color: #AEAEAE !important;
+        font-size: 1.2rem;
+        font-family: "josefin_sansbold", sans-serif;
+    }
+    
+    .post-content {
+        margin-top: 15px;
+
+        &>p:first-of-type::first-letter {
+            float: left;
+            font-size: 5.6rem;
+            font-weight: 700;
+            line-height: 50px;
+            margin: .1rem .3rem -.3rem 0;
+            line-height: 60px;
+            color: $base-color;
+        }
+    }
+}
+
+.home-content {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #3E3E3E;
+    font-family: 'josefin_sansregular', sans-serif;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 500;
+        font-family: 'josefin_sansbold', sans-serif;
+    }
+
+    img {
+        border: 1px solid #e5e5e5;
+    }
+
+    ul li {
+        list-style-type: square;
+    }
+}
+
+img.emoji {
+    border: none !important;
+    margin: auto !important;
+}
+
+.comments {
+    font-size: .9rem;
+    color: #696969;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer .disclaimer {
+    color: tomato;
+}
+
+.footer-copyright {
+	font-size: 1rem;
+	font-weight: 500;
+    color: $base-color !important;
+    background: #000000;
+}
+
+ul.social-list {
+	list-style: none;
+    color: $base-color;
+    li {
+        float: left;
+
+        a{
+            display: block;
+        }
+    }
+}
+
+#archive {
+    margin-top: -100px;
+}
+
+@media only screen and (max-width: 600px) {
+    #archive {
+        margin-top: auto;
+    } 
+}
+
+#archive ul li {
+    font-family: 'josefin_sansregular', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.info-box {
+    border-left: 4px solid #548FDC;
+    background-color: #DAEDF5;
+    color: #1b1b25;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-family: 'Raleway', sans-serif;
+    
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.danger-box {
+    border-left: 4px solid crimson;
+    background-color: #FFE2E2;
+    color: #1b1b25;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-family: 'Raleway', sans-serif;
+    
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.card-content {
+    min-height: 175px;
+    background: white;
+
+    .card-title {
+        font-size: 1.6rem !important;
+        line-height: 1.8 !important;
+        color: $base-color;
+        font-weight: 700;
+    }
+}
+
+.card .card-action a {
+    color: #f44336;
+    font-weight: 700;
+}
+
+.post-excerpt {
+    font-size: 1.2rem;
+    color: #1b1b25 !important;
+    font-weight: 500;
+}
+
+// Mailchimp specific
+
+#mc_embed_signup {
+    background: none !important;
+}
+
+#mc_embed_signup input.email {
+    background: #ffffff !important;
+}

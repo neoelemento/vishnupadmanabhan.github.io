@@ -1,0 +1,48 @@
+<head>
+	  <meta charset="utf-8">
+  	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% endif %} | neoelemento.com</title>
+      <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@neoelemento">
+      <meta name="twitter:creator" content="@neoelemento">
+      <meta name="twitter:domain" content="neoelemento.com">
+      
+      {% if page.title %}
+        <meta content="{{ page.title }}" property="og:title">
+        <meta content="{{ page.title }}" property="twitter:title">
+      {% else %}
+        <meta content="{{ site.title }}" property="og:title">
+      {% endif %}
+      {% if page.excerpt %}
+        <meta content="{{ page.excerpt }} | {{ page.content | strip_html | truncatewords: 30 }}" property="og:description">
+        <meta content="{{ page.excerpt }} | {{ page.content | strip_html | truncatewords: 30 }}" property="twitter:description">
+      {% else %}
+        <meta content="{{ site.description }}" property="og:description">
+        <meta content="{{ site.description }}" property="twitter:description">
+      {% endif %}
+      {% if page.banner %}
+        <meta property="og:image" content="{{ page.banner }}">
+        <meta property="twitter:image" content="{{ page.banner }}">
+      {% else %}
+        <meta content="http://res.cloudinary.com/neoelemento/image/upload/v1462391014/blog/neoelemento-min.jpg" property="og:image">
+      {% endif %}
+      <meta property="article:publisher" content="https://www.facebook.com/neoelemento/" />
+      <meta property="article:author" content="https://www.facebook.com/neoelemento" />
+      <link rel="icon" href="https://avatars2.githubusercontent.com/u/19311675?v=3&s=200" sizes="32x32">
+      <!--Import materialize.css-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" media="screen,projection">
+      <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+      <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+      {% if page.cheader %}
+        <style>
+          h1.post-title, h5.post-meta, nav a { color: {{page.cheader}} !important; } 
+          @media only screen and (max-width: 600px) { h1.post-title, h5.post-meta { color: black !important; } nav a { color: white !important; } }
+        </style>
+      {% endif %}
+</head>
+
