@@ -7,7 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
 disclaimer: >
   This blog, its content and opinions are my own and does not reflect the opinions of my employer.
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
-url: "http://neoelemento.com" # the base hostname & protocol for your site
+url: "http://vishnupadmanabhan.com" # the base hostname & protocol for your site
 twitter_username: neoelemento
 github_username:  neoelemento
 
