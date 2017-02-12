@@ -2,9 +2,6 @@
 layout: post
 title:  "The Beginning"
 excerpt: "My journey through life."
-banner: http://res.cloudinary.com/neoelemento/image/upload/v1483262724/blog/hoffice.jpg
-attr: <a href="http://neoelemento.com">Yours truly</a>
-cheader: "darkslategrey"
 author: "Vishnu"
 date:   2017-02-05 00:01:00
 categories: life
