@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Expectaions"
+title:  "Expectations"
 excerpt: "Quote"
 author: "Vishnu"
 date:   2017-02-13 00:07:00
