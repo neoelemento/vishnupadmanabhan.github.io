@@ -20,4 +20,4 @@ It's safe to say that most of the people we know have good intentions. No one is
 
 I spend my time trying to have fun, cracking jokes and being sarcastic. My sarcasm has helped me find real gems amongst people. The ones really care about you, they don't mind if you roast them with sarcasm. Others on the hand are easily offended. I am not talking about being a jerk and irritating people. You just know it as we meet people.
 
-So for me, life is a balance between being with my dear ones, taking care of my work *(it pays bills)* and doing few things I love to do. That gives me peace. That is my life. I love it!
+So for me, life is a balance between being with my dear ones, taking care of my work *(it pays bills)* and doing few things I love to do. That gives me peace. That is my life. I love it. You should too!
