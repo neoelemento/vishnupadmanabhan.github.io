@@ -368,15 +368,24 @@ article.post-content {
 }
 
 .home-content {
-    margin-top: 15px;
+    margin-top: 75px;
+    height: 100vh;
     font-size: 1.4rem;
     line-height: 2rem;
     font-weight: 400;
     color: #3E3E3E;
     font-family: 'josefin_sansregular', sans-serif;
 
+    h1 {
+        font-size: 4.5rem;
+        font-weight: 700;
+        font-family: $content-font-family;
+        color: #1b1b25;
+    }
+
     h2 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        line-height: 1.4;
         font-weight: 500;
         font-family: 'josefin_sansbold', sans-serif;
     }

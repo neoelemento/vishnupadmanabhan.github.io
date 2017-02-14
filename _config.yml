@@ -24,4 +24,4 @@ gems:
 
 permalink: /:year/:month/:day/:title/
 future: true
-paginate: 12
+paginate: 7
