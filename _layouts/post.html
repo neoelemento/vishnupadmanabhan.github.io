@@ -27,7 +27,7 @@ layout: default
 	          <h1 class="post-title" style="{% if page.video %} margin-top: 30px; color: #212121; {% endif %}">
 	            {{ page.title }}
 	          </h1>
-            <h5 class="post-meta" style="{% if page.video %} color: #AEAEAE; {% endif%}">{{ page.date | date: "%B %-d, %Y" }}</h5>
+            <h5 class="post-meta" style="{% if page.video %} color: #AEAEAE; {% endif%}">{{ page.date | date: "%A, %B %-d %Y" }}</h5>
 	          <article class="post-content" style="{% if page.video %} margin-top: 15px; {% endif%}">
 	            {{ content }}
 	          </article>  
