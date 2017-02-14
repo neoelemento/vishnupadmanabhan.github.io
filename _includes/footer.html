@@ -25,6 +25,11 @@
 <script type="text/javascript" src="{{ "/js/materialize.js" | prepend: site.baseurl }}"></script>
 
 <script>
+  // init nav
+  $(document).ready(function(){
+    $(".button-collapse").sideNav();
+  });
+  
   // smooth scrolling
   $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
