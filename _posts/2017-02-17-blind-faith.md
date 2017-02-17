@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Faith"
+title:  "Blind Faith"
 excerpt: "Blind faith - an epidemic"
 author: "Vishnu"
 date:   2017-02-17 00:13:59
