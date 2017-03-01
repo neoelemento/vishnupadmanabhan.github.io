@@ -255,7 +255,7 @@ article.post-content {
     line-height: 2.2rem;
     font-weight: 400;
     color: #393939;
-    font-family: $font-serif;    
+    font-family: $base-font-family;    
     
     h1 {
         font-size: 3.2rem;
@@ -297,15 +297,15 @@ article.post-content {
         margin-bottom: 2.5rem;
     }
 
-    &>p:first-of-type::first-letter {
-        float: left;
-        font-size: 9rem;
-        font-weight: 700;
-        line-height: 50px;
-        margin: 3rem .5rem -.8rem .2rem;
-        line-height: 60px;
-        color: $base-color;
-    }
+    // &>p:first-of-type::first-letter {
+    //     float: left;
+    //     font-size: 9rem;
+    //     font-weight: 700;
+    //     line-height: 50px;
+    //     margin: 3rem .5rem -.8rem .2rem;
+    //     line-height: 60px;
+    //     color: $base-color;
+    // }
 
     img {
         border: none;
