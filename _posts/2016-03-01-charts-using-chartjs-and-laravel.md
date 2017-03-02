@@ -4,7 +4,7 @@ title:  "Charts using Chart.js and Laravel"
 excerpt: "Create data driven charts using Chart.js and Laravel"
 author: "Vishnu"
 date:   2016-03-01 00:13:00
-categories: programming laravel chartjs
+categories: laravel javascript
 ---
 
 Recently I was working on an app that required some simple analytics. It involved charts and reports created from database values and displayed on the dashboard. The backend was in Laravel. For front end I wanted something that was simple. D3.js is a powerful library, but it would’ve been an overkill for a simple application. So I decided to use Chart.js. It is simple and generating charts is a real simple deal.
