@@ -1,76 +1,32 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
-
-
-
-// Our variables
-$base-font-family: 'josefin_sansregular', sans-serif;
-$content-font-family: 'Raleway', sans-serif;
-$base-font-size:   11px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-$font-serif: 'Adobe Caslon Pro', Georgia, serif;
-$font-serif-secondary: 'Merriweather', Georgia, serif;
-$font-monospace: 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace;
-
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-$base-color: #42b983;
-
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
         "fonts",
-        "layout",
-        "syntax-highlighting",
-        "materialize"
+        "syntax-highlighting"
 ;
 
-// style the pre tags
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+main {
+    display: block;
+    flex: 1 0 auto;
+}
 
 pre, code {
-    border: 1px dashed #e5e5e5;
+    font-family: 'Fira Code', monospace;
+    border: none;
     border-radius: 0px;
-    font-size: 1rem;
-    // white-space: pre-wrap;
- 	// word-wrap: break-word;
-    font-family: $font-monospace;
+    font-size: 1.4rem;
+    margin: 30px 0;
 }
 
 p code {
-    font-size: 1rem;
+    font-size: 1.4rem;
     padding: 1px;
     //background-color: #dedede;
     color: #c7254e;
@@ -78,465 +34,166 @@ p code {
     border-radius: 4px;
 }
 
-a, a:visited, a:active, a:hover {
-    color: $base-color;
-    text-decoration: none;
-}
-
-strong {
-    font-weight: 700;
-}
-
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    font-family: $base-font-family;
-    background-color: #fff !important;
-    font-size: $base-font-size;
-    -webkit-font-smoothing: antialiased;
-	-moz-font-smoothing: grayscale;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-main {
-    flex: 1 0 auto;    
-}
-
-.blog {
-    margin-top: -70px;
-    
-    .container {
-        margin-top: 50px;
-    }
-}
-
-blockquote {
-    font-size: 1.7em;
-    line-height: 2em;
-    font-style: normal;
-}
-
-a:active {
-    outline: none;
-}
-
-nav {
-    background: transparent !important;
-}
-
-.nav-color {
-    // background-color: #1b1b25;
-    background: transparent;
-    box-shadow: none;
-}
-
-.nav-side-color {
-    background-color: #FFF;
-    box-shadow: none;
-}
-
-nav a {
-    font-weight: 700;
-    font-size: 1.4rem !important;
-    color: $base-color !important;
-    text-decoration: none;
-    text-transform: lowercase;
-
-    &:hover, &:active {
-        color: #fff;
-        text-decoration: none;
-    }
-}
-
-// .nav-wrapper {
-//     box-shadow: 0 0 4px rgba(0,0,0,0.25);
-// }
-
-.brand-logo {
-    font-family: 'josefin_sansregular', sans-serif;
-    color: $base-color;
-    font-size: 2.1rem !important;
-}
-
-.side-nav li a {
-    color: $base-color !important;
-    text-transform: lowercase;
-}
-
-footer.page-footer {
-  margin-top: 0;
-  color: #efefef;
-  background: #1b1b25;
-}
-
-.parallax-container {
-    height: 450px;
+.navbar {
     margin-bottom: 0;
 }
 
-.banner {
-    background: #2BA3D4;
-    height: 101vh;
+.container-fluid .jumbotron {
+    height: 500px;
+    background: url('http://res.cloudinary.com/neoelemento/image/upload/v1464982113/blog/passion-min.jpg') center 30%;
+    /*background-color: #1b1b25;*/
+    background-size: cover;
+    border-bottom: 10px solid lightgreen;
+    color: white;
+    margin-bottom: 75px;
+    border-radius: 0;
 }
 
-.banner-wrapper {
-    height: 600px !important;
-    min-height: 100%;
-    width: 100%;
+.container-fluid .jumbotron-single {
+    min-height: 325px;
+    border-bottom: 10px solid lightgreen;
+    background-color: #1b1b25;
+    color: white;
+    margin-bottom: 10px;
+    padding: 50px 0;
+    border-radius: 0;
 }
 
-.banner-content {
-    text-align: center;
-    position: relative;
-    top: 55%;
-    transform: translateY(-50%);
-}
-
-.banner-content h1 {
-    color: #fff;
-    font-weight: 100;
-}
-
-.blog-title {
-    text-transform: lowercase;
-    font-weight: 300;
-    color: #AEAEAE;
-    font-size: 3.5em;
-}
-
-h2.post-title-main, h2.post-title-main:visited {
-	font-weight: 400;
-    color: $base-color;
-    font-size: 2rem;
-    font-family: "josefin_sansbold", sans-serif;
-}
-
-h2.post-title-main:hover {
-    text-decoration: underline;
-    color: $base-color;
-}
-
-.pagination {
-    font-size: 1.4rem;
-
-    a {
-        padding: 5px;
-        margin-right: 5px;        
-    }
-
-    em {
-        padding: 5px;
-        margin-right: 5px;
-    }
-}
-
-h1.post-title {
-    font-weight: 500;
-    color: #FFF;
-    font-size: 3rem;
-    margin-top: -200px;
-    font-family: "josefin_sansbold", sans-serif;
-    word-spacing: .75rem;
+.title-about {
+    font-weight: 700;
     text-transform: uppercase;
 }
 
-.post-meta {
-    font-weight: 400;
-    color: #FFF;
-    font-size: 1.2rem;
-    font-family: "josefin_sansbold", sans-serif;
+.single-article {
+    border-bottom: 3px solid lightgreen;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
 }
 
-article.post-content {
-    margin-top: 125px;
-    margin-bottom: 45px;
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-    font-weight: 400;
-    color: #393939;
-    font-family: $base-font-family;    
-    
-    h1 {
-        font-size: 3.2rem;
-        font-weight: 500;
-        font-family: 'josefin_sansbold', sans-serif;
-    }
-
-    h2 {
-        font-size: 2.6rem;
-        font-weight: 500;
-        font-family: 'josefin_sansbold', sans-serif;
-    }
-
-    h3 {
-      font-family: 'josefin_sansbold', sans-serif;
-      font-size: 2.2rem;
-      font-weight: 500;
-    }
-    
-    h4 {
-      font-family: 'josefin_sansbold', sans-serif;
-      font-size: 1.8rem;
-      font-weight: 500;
-    }
-    
-    h5 {
-      font-family: 'josefin_sansbold', sans-serif;
-      font-size: 1.6rem;
-      font-weight: 500;
-    }
-    
-    p {
-        word-spacing: .3rem;
-    }
-
-    // &>p:first-of-type {
-    //     font-size: 2rem;
-    //     line-height: 2.4rem;
-    //     margin-bottom: 2.5rem;
-    // }
-
-    // &>p:first-of-type::first-letter {
-    //     float: left;
-    //     font-size: 9rem;
-    //     font-weight: 700;
-    //     line-height: 50px;
-    //     margin: 3rem .5rem -.8rem .2rem;
-    //     line-height: 60px;
-    //     color: $base-color;
-    // }
-
-    img {
-        border: none;
-        margin: 30px auto;
-    }
-
-    ul li {
-        list-style-type: square;
-    }
-    
-    a, a:visited, a:active, a:hover {
-        font-weight: 500;
-    }
-
-    blockquote {
-      font-family: $font-serif;
-      font-style: italic;
-      font-weight: 300;
-      font-size: 2.4rem;
-      border-left: 5px solid $base-color;
-
-      strong {
-          font-weight: 500;
-      }
-    }
+.post-title {
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-@media only screen and (max-width: 600px) {
-    // styles for small screens and down
-    h1.post-title {
-        font-weight: 500;
-        color: #212121;
-        font-size: 3.2rem;
-        margin-top: 30px;
-        font-family: "josefin_sansbold", sans-serif;
-        word-spacing: .75rem;
-        text-transform: uppercase;
-    }
-    
-    .post-meta {
-        font-weight: 400;
-        color: #AEAEAE !important;
-        font-size: 1.2rem;
-        font-family: "josefin_sansbold", sans-serif;
-    }
-    
-    .post-content {
-        margin-top: 15px;
-
-        &>p:first-of-type::first-letter {
-            float: left;
-            font-size: 5.6rem;
-            font-weight: 700;
-            margin: .1rem .3rem -.3rem 0;
-            line-height: 60px;
-            color: $base-color;
-        }
-    }
+.post-title-single {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 5rem;
 }
 
-.home-content {
-    margin-top: 75px;
-    height: 100vh;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    font-weight: 400;
-    color: #3E3E3E;
-    font-family: 'josefin_sansregular', sans-serif;
-
-    h1 {
-        font-size: 4.5rem;
-        font-weight: 700;
-        font-family: $content-font-family;
-        color: #1b1b25;
-    }
-
-    h2 {
-        font-size: 2.2rem;
-        line-height: 1.4;
-        font-weight: 500;
-        font-family: 'josefin_sansbold', sans-serif;
-    }
-
-    img {
-        border: 1px solid #e5e5e5;
-    }
-
-    ul li {
-        list-style-type: square;
-    }
-}
-
-img.emoji {
-    border: none !important;
-    margin: auto !important;
-}
-
-.comments {
-    font-size: .9rem;
-    color: #696969;
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-footer .disclaimer {
-    color: tomato;
-}
-
-.footer-copyright {
-	font-size: 1rem;
-	font-weight: 500;
-    color: $base-color !important;
-    background: #0a0a14;
-}
-
-ul.social-list {
-	list-style: none;
-    color: $base-color;
-    li {
-        float: left;
-
-        a{
-            display: block;
-        }
-    }
-}
-
-#archive {
-    margin-top: -100px;
-}
-
-@media only screen and (max-width: 600px) {
-    #archive {
-        margin-top: auto;
-    } 
-}
-
-#archive ul li {
-    font-family: 'josefin_sansregular', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-}
-
-.info-box {
-    border-left: 4px solid #548FDC;
-    background-color: #DAEDF5;
-    color: #1b1b25;
-    padding: 10px;
-    margin: 15px 0;
-    font-size: 1rem;
-    line-height: 1.4rem;
-    font-family: 'Raleway', sans-serif;
-    
-    p {
-        margin-bottom: 0;
-    }
-}
-
-.danger-box {
-    border-left: 4px solid crimson;
-    background-color: #FFE2E2;
-    color: #1b1b25;
-    padding: 10px;
-    margin: 15px 0;
-    font-size: 1rem;
-    line-height: 1.4rem;
-    font-family: 'Raleway', sans-serif;
-    
-    p {
-        margin-bottom: 0;
-    }
-}
-
-.card-content {
-    min-height: 175px;
-    background: white;
-
-    .card-title {
-        font-size: 2.0rem !important;
-        line-height: 1.8 !important;
-        color: $base-color;
-        font-weight: 700;
-    }
-}
-
-.card .card-action a {
-    color: #f44336;
+.post-desc {
+    font-size: 2.2rem;
     font-weight: 700;
 }
 
-.post-excerpt {
-    font-size: 1.2rem;
-    color: #1b1b25 !important;
-    font-weight: 500;
+.post-desc-single {
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
-// Mailchimp specific
-
-#mc_embed_signup {
-    background: none !important;
+.post-meta {
+    font-weight: 700;
 }
 
-#mc_embed_signup input.email {
-    background: #ffffff !important;
+.post-category {
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 2px solid #5cb85c;
 }
 
-.fancy {
-  line-height: 0.5;
-  text-align: center;
+.post-featured-img {
+    width: 100%;
 }
-.fancy span {
-  display: inline-block;
-  position: relative;  
+
+.post-meta img {
+    width: 150px;
+    height: 150px;
 }
-.fancy span:before,
-.fancy span:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  border-bottom: 1px solid #1b1b25;
-  border-top: 1px solid #1b1b25;
-  top: 0;
-  width: 100%;
+
+.post-body {
+    padding: 15px 2px;
+
+    h1 {
+        font-size: 4.2rem;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 3.6rem;
+        font-weight: 700;
+    }
+
+    h3 {
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+    
+    h4 {
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+    
+    h5 {
+      font-size: 2.6rem;
+      font-weight: 700;
+    }
+
+    p {
+        font-size: 2.2rem;
+        line-height: 3rem;
+        word-spacing: .4rem;
+        font-weight: 400;
+        color: #393939;
+    }
 }
-.fancy span:before {
-  right: 100%;
-  margin-right: 15px;
+
+// .post-body img:not(.emoji) {
+//     width: 100%;
+//     margin: 10px 0 20px 0;
+// }
+
+.footer-content {
+    min-height: 20px;
+    padding: 20px;
+    text-align: center;
 }
-.fancy span:after {
-  left: 100%;
-  margin-left: 15px;
+
+.copyright {
+    text-align: center;
+    color: salmon;
+}
+
+
+
+/* overrides */
+
+.btn-green {
+    color: #1b1b25;
+    background-color: lightgreen;
+    border-color: #5cb85c;
+}
+
+.btn-green:hover {
+    color: white;
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+}
+
+/* links */
+
+a, a:hover, a:visited {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+h2 a, h2 a:hover, h2 a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.more-link, .more-link:hover, .more-link:visited {
+    text-transform: uppercase;
+    color: salmon;
+    font-weight: 700;
+    text-decoration: none;
 }

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title: About
 ---
 <div class="center">
     <img class="circle responsive-img center" src="https://avatars3.githubusercontent.com/u/10347504?v=3&amp;s=150">

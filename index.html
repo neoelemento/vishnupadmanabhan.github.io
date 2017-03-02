@@ -2,78 +2,91 @@
 layout: default
 title: Vishnu Padmanabhan's journal
 ---
-<main>
-  <div class="blog">    
-    <div class="container">
-      <div class="row">        
-        <div class="col s12 m10 l10 offset-m1 offset-l1">
-          <div class="home-content" style="color: #9C9C9C;">
-            <div class="center">
-              <img class="circle responsive-img center" src="https://avatars3.githubusercontent.com/u/10347504?v=3&amp;s=200">
-              <h1>HI, I AM VISHNU</h1>
-              <h2>I am a software engineer, blogger and programmer.</h2>
-              <a href="#articles" class="btn btn-large waves-effect waves-light blue-grey darken-4">Read Blog</a>
-            </div>              
-          </div>          
-        </div>  
-      </div> 
-    </div> 
-    
-    <img  id="articles" class="responsive-img" src="http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1486982004/without-wax-min.jpg" width="100%">
-        
-    <div class="container">
-     <div class="row">
-        <!--<h1 class="center-align">Vishnu's Journal</h1>-->
-        <div class="col s12 m8 l8 offset-m2 offset-l2">
-          <!--<h2 class="center-align">Latest Articles</h2>-->
-          {% for post in paginator.posts %}
- 
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                <div class="card grey lighten-4">
-                  <div class="card-content">
-                    <span class="card-title">{{ post.title }}</span>
-                    <p>{{ post.excerpt }}</p>
-                    <p class="post-excerpt">{{ post.content | strip_html | truncatewords: 75 }}</p>
-                    <p class="post-excerpt"><span style="color:crimson">Read More</span></p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">{{ post.date | date: "%A, %b %-d %Y" }}</a>
-                  </div>
+
+<main> 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="jumbotron text-center">
+                    <!--<h1>Hi, I'm Vishnu</h1>-->
                 </div>
-              </a> 
-           
-          {% endfor %}          
-        </div> 
-          
-        <div class="col m12">
-          <!-- pagination -->
-          {% if paginator.total_pages > 1 %}
-            <div class="pagination center-align">
-              {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-              {% else %}
-                <span>&laquo; Prev</span>
-              {% endif %}
-
-              {% for page in (1..paginator.total_pages) %}
-                {% if page == paginator.page %}
-                  <em>{{ page }}</em>
-                {% elsif page == 1 %}
-                  <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-                {% else %}
-                  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-                {% endif %}
-              {% endfor %}
-
-              {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-              {% else %}
-                <span>Next &raquo;</span>
-              {% endif %}
             </div>
-          {% endif %}     
         </div>
-      </div>
-    </div>
-  </div>
+
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">               
+                    <aside class="col-md-3 site-info">
+                        <h3 class="title-about">About Me</h3>
+                        <hr>
+                        <img src="https://avatars3.githubusercontent.com/u/10347504?v=3&s=150" alt="">
+                        <hr>
+                        <p>Hey, this is Vishnu here. I am a tech guy who blogs. This is my tech blog where I post stuff related to web technologies like JavaScript, HTML, CSS etc.</p> 
+                        <hr>
+                        <h5>Subscribe to blog</h5>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>                            
+                            <button type="submit" class="btn btn-green btn-block">Submit</button>
+                        </form>                  
+                        
+                    </aside>
+                    <div class="col-md-9">
+                      {% for post in paginator.posts %}
+                      <article class="single-article">
+                        <div class="row">
+                            <div class="col-md-3 post-meta">
+                              {% if post.banner %}
+                                <img src="{{ post.banner }}" alt="" class="img-circle">
+                              {% else %}
+                                <img src="http://res.cloudinary.com/neoelemento/image/upload/v1462390490/blog/programmer-min.jpg" alt="" class="img-circle">
+                              {% endif %}  
+                            </div>
+                            <div class="col-md-9 post-content">
+                              {% for category in post.categories %}<span class="post-category"><a href="/archives/#{{ category }}">{{ category }}</a></span> {% if forloop.last == false %} {% endif %}{% endfor %}
+                                <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                                <h3 class="post-desc">{{ post.excerpt }}</h3>                                
+                                <div class="post-body">
+                                    {{ post.content | strip_html | truncatewords: 100 }}
+                                    <br>
+                                    <a href="{{ post.url | prepend: site.baseurl }}" class="more-link">Read More</a
+                                </div>                        
+                            </div>
+                        </div>
+                      </article>
+                      {% endfor %}    
+
+                        <!-- pagination -->
+                        {% if paginator.total_pages > 1 %}
+                          <div class="pagination center-align">
+                            {% if paginator.previous_page %}
+                              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+                            {% else %}
+                              <span>&laquo; Prev</span>
+                            {% endif %}
+
+                            {% for page in (1..paginator.total_pages) %}
+                              {% if page == paginator.page %}
+                                <em>{{ page }}</em>
+                              {% elsif page == 1 %}
+                                <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                              {% else %}
+                                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                              {% endif %}
+                            {% endfor %}
+
+                            {% if paginator.next_page %}
+                              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+                            {% else %}
+                              <span>Next &raquo;</span>
+                            {% endif %}
+                          </div>
+                        {% endif %}       
+                    </div>
+                </div>
+            </div>
+        </section>
 </main>
