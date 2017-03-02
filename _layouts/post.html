@@ -7,7 +7,7 @@ layout: default
         <div class="jumbotron-single text-center">
             <div class="col-md-8 col-md-offset-2">
                 <h2 class="post-title-single">{{ page.title }}</h2>
-                <h3 class="post-desc-single">{{ page.excerpt }}</h3>
+                <!--<h3 class="post-desc-single">{{ page.excerpt }}</h3>-->
                 <p class="post-meta">Posted in {% for category in page.categories %}<a href="/blog/archives/#{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
                   on {{ page.date | date: "%A, %B %-d %Y" }}</p>
             </div>               
