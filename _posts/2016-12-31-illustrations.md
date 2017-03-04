@@ -21,8 +21,6 @@ But this week, I tried Inkscape. I have been using windows as my primary desktop
 
 But I had been reading about *svg(scalable vector graphics)* lately. The svg image type has a very small file size compared to a *jpeg* or *png* image type. Where a typical compressed *jpeg* can be anywhere from 60-140kb the SVG is around 4-20kb resulting in huge bandwidth savings.
 
-![comet]()
-
 So, I tried using [Gravit](http://gravit.io){:target="_blank"}. It is an online tool similar to Illustrator. It's amazing for a free online editor. Gravit is really great if you want easy to do and less complex illustrations. But I also tried Inkscape again. This time with the help of some online tutorials, especially by [Nick Saporito](https://www.youtube.com/channel/UCEQXp_fcqwPcqrzNtWJ1w9w){:target="_blank"}, I got back up again. The fiery comet you see in the post thumbnail is from one of his tutorials.
 
 So, going forward, I would try to create all illustrations for the blog myself. Add that to *things to do in 2017*!
