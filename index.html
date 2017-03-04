@@ -15,7 +15,7 @@ title: Vishnu Padmanabhan's journal
         <section class="container-fluid">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">               
-                    <aside class="col-md-3 site-info">
+                    <aside class="col-md-3 site-info  hidden-xs">
                         <h3 class="title-about">About Me</h3>
                         <hr>
                         <img src="https://avatars3.githubusercontent.com/u/10347504?v=3&s=150" alt="">
@@ -40,7 +40,7 @@ title: Vishnu Padmanabhan's journal
                         <div class="row">
                             <div class="col-md-3 post-meta">
                               {% if post.banner %}
-                                <img src="{{ post.banner }}" alt="" class="img-circle">
+                                <img src="{{ post.banner }}" alt="" class="img-circle hidden-xs">
                               {% else %}
                                 <img src="http://res.cloudinary.com/neoelemento/image/upload/v1462390490/blog/programmer-min.jpg" alt="" class="img-circle">
                               {% endif %}  
@@ -86,6 +86,27 @@ title: Vishnu Padmanabhan's journal
                           </div>
                         {% endif %}       
                     </div>
+
+                    <!-- visible only on mobile -->
+                    <aside class="col-md-3 site-info  visible-xs">
+                        <h3 class="title-about">About Me</h3>
+                        <hr>
+                        <img src="https://avatars3.githubusercontent.com/u/10347504?v=3&s=150" alt="">
+                        <hr>
+                        <p>Hey, this is Vishnu here. I am a tech guy who blogs. This is my tech blog where I post stuff related to web technologies like JavaScript, HTML, CSS etc. I have <a href="http://neoelemento.com">another blog</a> where I write stuff about life.</p> 
+                        <hr>
+                        <h5>Subscribe to blog</h5>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>                            
+                            <button type="submit" class="btn btn-green btn-block">Submit</button>
+                        </form>                  
+                        
+                    </aside>
                 </div>
             </div>
         </section>
