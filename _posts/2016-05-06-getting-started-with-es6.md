@@ -5,7 +5,7 @@ excerpt: "The new JavaScript - ES6. It's cool."
 banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488592010/js.jpg
 author: "Vishnu"
 date:   2016-05-06 00:01:00
-categories: javascript programming
+categories: javascript
 ---
 Being in tech is overwhelming at times. There is always scope to learn more and if you are not able to keep up with the industry, you are going to be left behind at some point. There are so many new languages, frameworks, workflows and techniques coming out every day that it is hard to keep up. But to stay relevant in your area it is important to see the trend and prepare yourself for the future. 
 

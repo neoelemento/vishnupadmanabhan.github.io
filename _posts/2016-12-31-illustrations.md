@@ -7,7 +7,7 @@ attr: <a href="http://vishnupadmanabhan.com">Yours truly</a>
 cheader: "white"
 author: "Vishnu"
 date:   2016-12-31 00:01:00
-categories: life work
+categories: design
 ---
 I always had a liking for illustration and design. Back during my school days, I tried creating some graphics in what was then the ultimate tool for graphic design - *MS Paint*. Before you frown upon it, take a look at [this](http://www.smosh.com/smosh-pit/photos/ms-paint){:target="_blank"}!. 
 

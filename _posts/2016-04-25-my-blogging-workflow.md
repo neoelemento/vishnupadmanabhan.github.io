@@ -5,7 +5,7 @@ excerpt: "Blogging on Jekyll using Visual Studio Code."
 banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488591100/jekyll.jpg
 author: "Vishnu"
 date:   2016-04-25 00:13:00
-categories: blogging jekyll
+categories: blogging
 ---
 Starting in 2010, I have tried various blogging platforms. [Blogger](https://www.blogger.com/), WordPress (both [self hosted](https://wordpress.org/) and [.com](https://wordpress.com/) one), [Tumblr](https://www.tumblr.com/) have all at one time or the other, hosted my thoughts. Initially blogger felt really simple but as WordPress came in, it seemed to be more customisable. I ran a self hosted WordPress site for quite sometime, but felt that for my blog I do not need anything as complicated as WordPress, with a database and all that. Also, I ended up paying for domain and hosting as well since WordPress.com did not allow free custom domain mapping. I did not want to pay a big amount for hosting. Tumblr is good, it lets you customize the themes and custom domain mapping is free and simple. But I felt some restrictions there as well.
 
