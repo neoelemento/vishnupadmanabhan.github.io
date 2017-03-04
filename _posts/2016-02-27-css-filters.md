@@ -2,7 +2,7 @@
 layout: post
 title:  "CSS Filters"
 excerpt: "Let's take a look at various CSS filters"
-banner: http://res.cloudinary.com/neoelemento/image/upload/v1462390484/blog/cssrocks-min.jpg
+banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488591817/css.jpg
 author: "Vishnu"
 date:   2016-02-27 01:13:00
 categories: css

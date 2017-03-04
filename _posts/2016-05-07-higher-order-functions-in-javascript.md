@@ -2,12 +2,12 @@
 layout: post
 title:  "Higher order functions in JavaScript"
 excerpt: "A look into functional programming concept in JavaScript"
-banner: http://res.cloudinary.com/neoelemento/image/upload/v1481370004/blog/ES-min.jpg
+banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488592010/js.jpg
 author: "Vishnu"
 date:   2016-05-07 00:01:00
 categories: javascript programming
 ---
-If you have been reading other posts on this blog, you might see that I am a [fan of JavaScript](http://neoelemento.com/blog/2015/10/24/javascript-everywhere/). We skimmed through the surface of ES6 in an [earlier post](http://neoelemento.com/blog/2016/05/06/getting-started-with-es6/). Today we'll go a bit into the functional programming aspect of JavaScript. Concept of functional programming makes programming a joy by saving complication and development time as well.
+If you have been reading other posts on this blog, you might see that I am a [fan of JavaScript](http://vishnupadmanabhan.com/javascript-everywhere/). We skimmed through the surface of ES6 in an [earlier post](http://vishnupadmanabhan.com/getting-started-with-es6/). Today we'll go a bit into the functional programming aspect of JavaScript. Concept of functional programming makes programming a joy by saving complication and development time as well.
 
 ## Functional Programming
 We all know what functions are. Be it any high level language like C, C++, Java, PHP or Python, they all have functions. Functions enable re-using a set of instructions. Let's take the following simple example:

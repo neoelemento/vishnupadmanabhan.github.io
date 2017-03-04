@@ -2,7 +2,7 @@
 layout: post
 title:  "Getting Started with ES6"
 excerpt: "The new JavaScript - ES6. It's cool."
-banner: http://res.cloudinary.com/neoelemento/image/upload/v1481370004/blog/ES-min.jpg
+banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488592010/js.jpg
 author: "Vishnu"
 date:   2016-05-06 00:01:00
 categories: javascript programming
@@ -14,7 +14,7 @@ One particular area where I have seen this trend in the past few years is in the
 ## JavaScript is cool
 Let's admit it. The world seems to be taken over by JavaScript in the past few years. Every other day there is a "cool" new framework coming out and there is a lot of developments happening in the JavaScript space. So if you are anything like me, following the tech community, you would've come across the term **ECMAScript**, particularly **ES6** or **ES2015**.
 
-JavaScript is a language that has really progressed in the [last few years](http://neoelemento.com/blog/2015/10/24/javascript-everywhere/). So what is all this hype around ES6? What is it got to do with JavaScript? Should you learn JavaScript or ECMAScript?
+JavaScript is a language that has really progressed in the [last few years](http://vishnupadmanabhan.com/javascript-everywhere/). So what is all this hype around ES6? What is it got to do with JavaScript? Should you learn JavaScript or ECMAScript?
 
 I am writing this post to give a brief intro to ES6 and some of its features and by no means is this a complete guide. There are excellent resources on the internet to learn ES6. My intention is to get the reader excited to at least go and explore ES6 for a bit.
 
@@ -380,7 +380,7 @@ function sum(...numbers) {
 sum(1, 2, 3, 4) // result = 10
 {% endhighlight %}
 
-In the above example we make use of `reduce`, which is a higher order function in JavaScript. You can read more about higher order functions [here](http://neoelemento.com/blog/2016/05/07/higher-order-functions-in-javascript/). Leaving that aside, see how we used the rest operator with the numbers variable `...numbers`.
+In the above example we make use of `reduce`, which is a higher order function in JavaScript. You can read more about higher order functions [here](http://vishnupadmanabhan.com/higher-order-functions-in-javascript/). Leaving that aside, see how we used the rest operator with the numbers variable `...numbers`.
 
 One thing to note here tough, in case of multiple arguments, the Rest operator should always come towards the end like `function sum(arg, ...numbers) {}`. So it translates to `arg` and the *rest* of it.
 

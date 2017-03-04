@@ -2,13 +2,14 @@
 layout: post
 title:  "Desktop apps with Electron - 1"
 excerpt: "Let us see how we can create a desktop app using JavaScript, HTML and CSS using Electron framework."
+banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488592226/electron.jpg
 author: "Vishnu"
 date:   2015-10-25 02:48:00
 categories: javascript
 ---
 ## What is the fuss all about?
 
-In my [last post](http://neoelemento.com/blog/2015/10/24/javascript-everywhere/), I wrote about how JavaScript has taken over the programming world and now extends beyond the boundaries of a web browser. It exisits on the server side and on various desktop apps as well. So we'll see how to create a simple desktop app using [Electron](http://electron.atom.io).
+In my [last post](http://vishnupadmanabhan.com/javascript-everywhere/), I wrote about how JavaScript has taken over the programming world and now extends beyond the boundaries of a web browser. It exisits on the server side and on various desktop apps as well. So we'll see how to create a simple desktop app using [Electron](http://electron.atom.io).
 
 [Electron](http://electron.atom.io) is an open source framework maintained by [Github](http://github.com) to enable building cross platform desktop apps using web technologies like HTML, CSS and JavaScript. Electron was initially built to power Github's [Atom](http://atom.io) editor. Electron has been gaining popularity as is it easier for developers familiar with web technologies to bring their expertise to the desktop world. Maintaining the project is also easy as it is basically the same codebase for OSX, Windows or Linux platform. Few companies who are already using Electron to power their apps are:
 
@@ -165,4 +166,4 @@ Programming started for desktop and then evolved when web came into existance. E
 
 So, that is how simple it is to create a simple desktop app using Electron. Though our app does not do anything complex right now, it is a good start where we learn how to create a simple window which works across various platforms. In the next post in the series, we'll see how to create multiple windows in an Electron app.
 
-[Part 2 of creating desktop apps with Electron](http://neoelemento.com/blog/2015/10/29/desktop-apps-with-electron-2/)
+[Part 2 of creating desktop apps with Electron](http://vishnupadmanabhan.com/desktop-apps-with-electron-2/)

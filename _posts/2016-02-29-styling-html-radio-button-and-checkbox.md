@@ -2,6 +2,7 @@
 layout: post
 title:  "Styling HTML radio button and checkbox"
 excerpt: "How to change the default style of the html radio button and checkbox"
+banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488591689/cbrb.jpg
 author: "Vishnu"
 date:   2016-02-29 00:13:00
 categories: html css

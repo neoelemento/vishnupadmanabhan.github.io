@@ -2,7 +2,7 @@
 layout: post
 title:  "HTTP status codes"
 excerpt: "There are various HTTP codes that are returned from a server. What do these numbers mean?"
-banner: http://res.cloudinary.com/neoelemento/image/upload/v1462390491/blog/http-status-codes-min.jpg
+banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488591916/http.jpg
 author: "Vishnu"
 date:   2015-11-22 08:13:00
 categories: http

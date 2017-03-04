@@ -2,8 +2,8 @@
 layout: post
 title:  "Illustrations"
 excerpt: "Back to learning design. In Inkscape."
-banner: http://res.cloudinary.com/neoelemento/image/upload/v1483181548/blog/comet.svg
-attr: <a href="http://neoelemento.com">Yours truly</a>
+banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488592539/comet.jpg
+attr: <a href="http://vishnupadmanabhan.com">Yours truly</a>
 cheader: "white"
 author: "Vishnu"
 date:   2016-12-31 00:01:00
@@ -21,6 +21,8 @@ But this week, I tried Inkscape. I have been using windows as my primary desktop
 
 But I had been reading about *svg(scalable vector graphics)* lately. The svg image type has a very small file size compared to a *jpeg* or *png* image type. Where a typical compressed *jpeg* can be anywhere from 60-140kb the SVG is around 4-20kb resulting in huge bandwidth savings.
 
-So, I tried using [Gravit](http://gravit.io){:target="_blank"}. It is an online tool similar to Illustrator. It's amazing for a free online editor. Gravit is really great if you want easy to do and less complex illustrations. But I also tried Inkscape again. This time with the help of some online tutorials, especially by [Nick Saporito](https://www.youtube.com/channel/UCEQXp_fcqwPcqrzNtWJ1w9w){:target="_blank"}, I got back up again. The fiery comet you see on the banner is from one of his tutorials.
+![comet]()
+
+So, I tried using [Gravit](http://gravit.io){:target="_blank"}. It is an online tool similar to Illustrator. It's amazing for a free online editor. Gravit is really great if you want easy to do and less complex illustrations. But I also tried Inkscape again. This time with the help of some online tutorials, especially by [Nick Saporito](https://www.youtube.com/channel/UCEQXp_fcqwPcqrzNtWJ1w9w){:target="_blank"}, I got back up again. The fiery comet you see in the post thumbnail is from one of his tutorials.
 
 So, going forward, I would try to create all illustrations for the blog myself. Add that to *things to do in 2017*!

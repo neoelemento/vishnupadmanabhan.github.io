@@ -2,6 +2,7 @@
 layout: post
 title:  "JavaScript Everywhere!"
 excerpt: "JavaScript has come a long way as a programming language, just my thoughts on it and a retrospect."
+banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488592010/js.jpg
 author: "Vishnu"
 date:   2015-10-24 11:05:00
 categories: javascript

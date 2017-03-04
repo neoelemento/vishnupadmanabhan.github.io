@@ -2,7 +2,7 @@
 layout: post
 title:  "My blogging workflow"
 excerpt: "Blogging on Jekyll using Visual Studio Code."
-banner: http://res.cloudinary.com/neoelemento/image/upload/v1462390492/blog/Blogging_Workflow-min.jpg
+banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488591100/jekyll.jpg
 author: "Vishnu"
 date:   2016-04-25 00:13:00
 categories: blogging jekyll
@@ -113,7 +113,7 @@ Between these triple-dashed lines, you can set predefined variables or even crea
 ## Visual Studio Code
 [Visual Studio Code](https://code.visualstudio.com/) is a cross platform, open source source code editor developed by Microsoft. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring. It is also customizable, so users can change the editor's theme, keyboard shortcuts, and preferences. I am big editor juggler. I am never satisfied with one editor and keep trying different ones. If at all there is an editor that supports linux, I would've tried it. Since many years I am a Sublime Text user. I like minimal and fast editors. I don't use IDEs for coding, I just use editors with plugins.
 
-So when Microsoft came out with VSCode, I was a bit surprised to see that it was supported in Linux. VSCode is built using Github's [Electron Framework](http://neoelemento.com/blog/2015/10/25/desktop-apps-with-electron-1/). Downloaded and tried and I loved the user interface. It provides syntax highlighting and intellisense support for many languages. But what makes it good for blogging is it's markdown support.
+So when Microsoft came out with VSCode, I was a bit surprised to see that it was supported in Linux. VSCode is built using Github's [Electron Framework](http://vishnupadmanabhan.com/desktop-apps-with-electron-1/). Downloaded and tried and I loved the user interface. It provides syntax highlighting and intellisense support for many languages. But what makes it good for blogging is it's markdown support.
 
 ### Markdown editing
 I have been hearing about markdown, but never paid much attention to it as I was comfortable with the WYSIWYG editors that came with WordPress and other blogging platforms. Sublime has been my code editor since 2012. I love it,nothing more or less to be said. Sublime provides syntax highlighting and other plugins for markdown editing as well, but VSCode natively supports the markdown preview.

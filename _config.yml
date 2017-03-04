@@ -22,6 +22,6 @@ gems:
   - jemoji
   - jekyll-paginate
 
-permalink: /:year/:month/:day/:title/
+permalink: /:title/
 future: true
 paginate: 10
