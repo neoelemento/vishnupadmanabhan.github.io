@@ -26,19 +26,19 @@ main {
     flex: 1 0 auto;
 }
 
-pre, code {
-    font-family: 'Fira Code', monospace;
+pre, code, code[class*="language-"],pre[class*="language-"] {
+    // font-family: 'Fira Code', monospace;
     border: none;
     border-radius: 0px;
     font-size: 1.4rem;
     line-height: 3.2rem;
-    margin: 30px 0;
+    // margin: 30px 0;
 }
 
 p code {
     font-size: 1.6rem;
     padding: 1px;
-    //background-color: #dedede;
+    font-family: 'Fira Code', monospace;
     color: #c7254e;
     background-color: #f9f2f4;
     border-radius: 4px;

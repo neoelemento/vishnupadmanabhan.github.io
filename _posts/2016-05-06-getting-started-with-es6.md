@@ -151,7 +151,7 @@ To understand why we have these additional keywords, let's take a little detour 
 ### Variable hoisting 
 Let's look at the following sample code:
 
-{% highlight javascript %}
+```javascript
 function onKey(start) {
     if (start) {
         var state = "Vehicle started";
@@ -161,19 +161,19 @@ function onKey(start) {
         return null;        
     }    
 }
-{% endhighlight %}
+```
 
 Nothing new there, a straight forward bit of code. when the function executes, if `start` is true, then the variable `state` is assigned a value of `"Vehicle started"`. Else the function returns `null`. Now let's assume, we uncomment the line `console.log(state)` within the `else` block thereby logging the variable `state` to the console. In this case what would be the output?
 
-{% highlight bash %}
-undefined
-{% endhighlight %}
+```bash
+> undefined
+```
 
 You would expect the console to throw up a reference error since the else block should not have access to the `state` variable. The declaration happens within the `if` condition, but the variable is accessible within `else` condition, but just that the value is `undefined`. How can this happen?
 
 This is a little confusing until you understand the concept of **hoisting**. Hoisting in JavaScript means that the declaration of the variable, in our case `state` is hoisted to the top, while the initialization remains within `if` clause. To make this more clear, here is what happens behind the scenes:
 
-{% highlight javascript %}
+```javascript
 function onKey(start) {
     var state; // JavaScript hoists the variable declaration
     if (start) {
@@ -184,7 +184,7 @@ function onKey(start) {
         return null;
     }    
 }
-{% endhighlight %}
+```
 
 As you can see, JavaScript pulls up the variable and declares it on the top. This is called hoisting. Actually this is the reason why it is considered a best practice to declare your variables at the top.
 
@@ -192,7 +192,7 @@ To avoid this confusion around hoisting, block level declarations were created i
 
 Let's take the same example as above and use `let` instead of `var`.
 
-{% highlight javascript %}
+```javascript
 function onKey(start) {
     if (start) {
         let state = "Vehicle started"; // scope is within if block
@@ -202,17 +202,17 @@ function onKey(start) {
         return null;        
     }    
 }
-{% endhighlight %}
+```
 
 Using `let` keyword, keeps the scope of the variable `state` restricted within the `if` block and does not hoist it to the top. Also using `let` keyword prevents re-declaration. Within the same scope, if a variable is re-declared, `let` throws an error.
 
-{% highlight javascript %}
+```javascript
 var step = 4; // initial declaration of step
 let step = 5; // this will throw an error as step is being re-declared
 if (something) {
     let step = 5; // this won't cause error as it is within scope of `if`    
 }
-{% endhighlight %}
+```
 
 So at this point in time, if you are already into ES6, there is no need to have `var` in your code. You can use either `let` or `const` for all your variable declarations. Now that we mentioned it, let's look at `const`.
 
@@ -220,7 +220,7 @@ The `const` keyword is different from the `let` keyword in a way that it is used
 
 This might sound like `const` is immutable. In a sense yes, but that being said, a const declaration only prevents modification of the binding and not of the value itself. What this means is that const declarations for objects do not prevent modification of the objects.
 
-{% highlight javascript %}
+```javascript
 const step = 4; // step is assigned a value 4
 step = 5; // error as const cannot be changed
 const age; // error, as const needs to be initialised
@@ -233,7 +233,7 @@ car = {
     make: "Jaguar" // error
 };
 car.make = "Mesarati"; // works fine
-{% endhighlight %}
+```
 
 The binding `car` is created with an initial value of an object with a property, but `car.name` can be changed without causing an error because this changes what `car` contains and doesn't change bound value of `car`. Any attempts to assign a value to `car` which in turn changes the binding, will result in an error. This a bit confusing but the fact is that `const` only prevents modification of the binding, not modification of the bound value. **It just means that the variable cannot be reassigned to something else**.
 
@@ -251,33 +251,33 @@ ES6 should have some more tricks up it's sleeve shouldn't it? Being new and all?
 #### 1. Arrow Operator
 Seen this guy? `=>` Yeah the arrow operator. Nothing new I presume? You might think, but this guy is really cool in ES6. How? Let's see. Take the following code snippet for example:
 
-{% highlight javascript %}
+```javascript
 let getter = function(value) {
     return value;
 };
-{% endhighlight %}
+```
 
 The same expression can be ES6 using arrow operator. Arrow operator helps in reducing an expression to a much simpler form. Using arrow syntax, the above code can be reproduced as:
 
-{% highlight javascript %}
+```javascript
 let getter = value => value;
-{% endhighlight %}
+```
 
 Brain exploded? :laughing: How cool is that? All your `function` keyword, parenthesis `()` and braces `{}` are out of the window. Let's look at a slightly more complex example.
 
-{% highlight javascript %}
+```javascript
 // normal ES5
 let fullName = function(firstName, lastName) {
     return firstName + " " + lastName;
 };
 // Using arrow syntax
 let fullName = (firstName, lastName) => firstName + " " + lastName;
-{% endhighlight %}
+```
 
 #### 2. Destructuring
 One of the coolest things that ES6 offers is something called destructuring. If you are someone who works a lot in objects and arrays, you are going to love this. Since JSON has become a big thing, object and array literals have become most important in the language. Pulling data from these structures is very common practice in any JavaScript app. Let's look at the following example:
 
-{% highlight javascript %}
+```javascript
 let car = {
     make:     'Jaguar',
     power:    '300hp',
@@ -285,11 +285,11 @@ let car = {
 }
 let {make, topSpeed} = car; // assigning the variables to object
 console.log("The " + make + " goes at " + topSpeed);
-{% endhighlight %}
+```
 
 See the magic? :sunglasses: The variable was automatically assigned the value from the object. Same code in ES5 will be like so:
 
-{% highlight javascript %}
+```javascript
 var car = {
     make: 'Jaguar',
     power: '300hp',
@@ -298,14 +298,14 @@ var car = {
 var make = car.make;
 var topSpeed = car.topSpeed;
 console.log("The " + make + " goes at " + topSpeed);
-{% endhighlight %}
+```
 
 See the ease? Number of lines of code that you save. If nothing, see how clean the syntax is? Go back and read what's written in the banner image again!
 
 #### 3. Template literals
 Template strings or template literals are cool like everything else with ES6. This is really helpful in scenarios where you want to insert an HTML snippet withing JavaScript and render it out dynamically. Traditionally, to do this, you would've done something like this:
 
-{% highlight javascript %}
+```javascript
 // as strings
 var snippet = '<div class="fun">' +
                 '<p>Inside of Div</p>' +
@@ -323,11 +323,11 @@ var snippet = [
     '<p>Inside of Div</p>',
     '</div>'
 ].join(''); 
-{% endhighlight %}
+```
 
 Not to exaggerate, but this a was a big pain! And your code looked like some kind of soup. But with template literals, this can be way simpler and cleaner. Even inserting dynamic values are painless as shown below:
 
-{% highlight javascript %}
+```javascript
 // template literal
 let snippet = `
     <div class="fun">
@@ -342,7 +342,7 @@ let snippet = `
       <p>${value}</p>
     </div>
 `;
-{% endhighlight %}
+```
 
 Few of the JavaScript frameworks like [React](https://facebook.github.io/react/) and [Vue](http://vuejs.org/) use templating for rendering components. This feature is further supplemented by having template literals as a feature in ES6.
 
@@ -352,17 +352,17 @@ There are instances where you do not know exactly how many arguments you need to
 ##### Rest
 Take a look at the following code snippet:
 
-{% highlight javascript %}
+```javascript
 // function to add numbers
 function sum(x, y, z) {
     return x + y + z;
 }
 sum(1, 2, 3) // result = 6
-{% endhighlight %}
+```
 
 In the above example, the function `sum()` accepts three arguments and when you supply three numbers, it returns the sum. Now imagine you need sum of four numbers. You cannot use the same function as it takes in only three arguments. Now look at the following:
 
-{% highlight javascript %}
+```javascript
 // function to add numbers
 function sum(...numbers) {
     return numbers.reduce(function(previous, current) {
@@ -378,7 +378,7 @@ function sum(...numbers) {
     );
 }
 sum(1, 2, 3, 4) // result = 10
-{% endhighlight %}
+```
 
 In the above example we make use of `reduce`, which is a higher order function in JavaScript. You can read more about higher order functions [here](http://vishnupadmanabhan.com/higher-order-functions-in-javascript/). Leaving that aside, see how we used the rest operator with the numbers variable `...numbers`.
 
@@ -387,21 +387,21 @@ One thing to note here tough, in case of multiple arguments, the Rest operator s
 ##### Spread
 The Spread operator kind of does the opposite of Rest operator. If we go back to our first example of the `sum()` function, the spread operator takes the array and converts each array item into separate arguments.
 
-{% highlight javascript %}
+```javascript
 // function to add numbers
 function sum(x, y) {
     return x + y;
 }
 let vals = [1, 2];
 console.log(sum(...vals));
-{% endhighlight %}
+```
  
 So when the Rest operator helps in splitting any sequence of operators into an array, the spread operator splits an array into arguments. 
 
 #### 5. Default arguments
 ES6 provides support for default parameters which is already a feature in languages like PHP. If a function is declared with a default fallback value for the argument, during the function call if there are no arguments supplied to the function, it simply returns the default value specified. The following example clarifies this concept.
 
-{% highlight javascript %}
+```javascript
 // function to get rating in ES5 way
 function getRating(rating) {
     rating = rating || 10; // ES5 way of applying default value.
@@ -415,7 +415,7 @@ function getRating(rating = 10) {
 
 console.log(getRating(100)); // return value 100
 console.log(getRating()); // return value 10 since no argument is supplied
-{% endhighlight %}
+```
 
 In the ES5 way of applying default, we use an `||` (OR operator) to assign a default value to `rating`. But in the ES6 way, this default value can be supplied within the arguments as shown above.
 
