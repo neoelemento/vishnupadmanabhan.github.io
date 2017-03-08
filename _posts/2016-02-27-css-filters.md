@@ -33,7 +33,7 @@ img {
 ## Brightness
 Brightness filter adjusts the brightness of the image. Simple as that.
 
-{% highlight css %}
+```css
 
 img {
     filter: brightness(30%);
@@ -41,7 +41,7 @@ img {
     filter: brightness(5); 
 }
 
-{% endhighlight %}
+```
 
 <img src="https://farm8.staticflickr.com/7319/8747502274_d536934ba2_b.jpg" style="width: 40%; margin: auto; float:left">
 

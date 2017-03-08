@@ -13,7 +13,7 @@ I have [written](http://vishnupadmanabhan.com/my-blogging-workflow/) previously 
 
 After I got everything installed and up and running, I ran into problems. Every time I ran Jekyll serve, I saw this:
 
-```text
+```bash
 D:\code\blog>jekyll serve --drafts
 ----------
 Incremental build: disabled. Enable with --incremental

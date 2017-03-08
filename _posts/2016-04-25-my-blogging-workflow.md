@@ -37,7 +37,7 @@ Initially when I started with Jekyll, I used a plain template that comes with ba
 
 The folder structure of a Jekyll installation has the following folder structure:
 
-{% highlight text %}
+```bash
 
 ├── _drafts
 |   ├── my-favourite-car.md
@@ -58,7 +58,7 @@ The folder structure of a Jekyll installation has the following folder structure
 ├── _config.yml
 └── index.html
 
-{% endhighlight %}
+```
 
 Each of the above folders and files have the following functions:
 
@@ -76,7 +76,7 @@ Each of the above folders and files have the following functions:
 
 Jekyll also supports permalinks and SEO friendly URL. The base configuration of a Jekyll site is in a _config.yml file. This is where you specify the basic configuration of your blog. Here is a sample:
 
-{% highlight yaml %}
+```yaml
 # Site settings
 title: neo-elemento
 owner: Vishnu Padmanabhan
@@ -93,11 +93,11 @@ github_username:  your_username
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 paginate: 7
-{% endhighlight %}
+```
 
 Each of the post will have something called **Front Matter**. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example from my blog:
 
-{% highlight text %}
+```yaml
 ---
 layout: post
 title:  "My blogging workflow"
@@ -105,7 +105,7 @@ excerpt: "My blogging workflow on Jekyll using VSCode"
 author: "Vishnu"
 categories: blogging, jekyll
 ---
-{% endhighlight %}
+```
 
 Between these triple-dashed lines, you can set predefined variables or even create custom ones of your own. These variables will then be available to you to access using Liquid tags both further down in the file and also in any layouts or includes that the page or post in question relies on.
 
