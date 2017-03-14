@@ -162,6 +162,10 @@ p code {
         color: #393939;
     }
 
+    img {
+        max-width: 100%;
+    }
+
     ul li, ol li {
         font-size: 2.2rem;
         line-height: 3rem;
@@ -179,6 +183,18 @@ p code {
         strong {
             font-weight: 500;
         }
+    }
+
+    figure {
+        border-bottom: 1px solid lightgreen;
+        margin: 20px 0;
+    }
+
+    figcaption {
+        font-size: 1.2rem;
+        margin-top: 5px;
+        font-weight: 700;
+        font-family: 'Fira Code', sans-serif;
     }
 }
 
