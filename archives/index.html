@@ -18,7 +18,7 @@ title: Archives
                 <ul class="past">
             {% endif %}
             {% endunless %}
-            <li><strong><time>{{ post.date | date:"%d %b" }}</time>: <a href="/blog{{ post.url }}">{{ post.title }}</a></strong></li>
+            <li><strong><time>{{ post.date | date:"%d %b" }}</time>: <a href="{{ post.url }}">{{ post.title }}</a></strong></li>
         {% endfor %}
         </ul>
         
