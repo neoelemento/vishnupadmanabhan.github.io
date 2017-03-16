@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jekyll on Windows"
+title:  "Jekyll watch on Windows"
 excerpt: "Installing Jekyll on Windows and associated issues"
 banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488591100/jekyll.jpg
 author: "Vishnu"
