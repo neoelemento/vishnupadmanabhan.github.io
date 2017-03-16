@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  ".NET Core - Intro"
-excerpt: "Getting started with .NET Core MVC app in VSCode"
+excerpt: "Getting started with .NET Core in VSCode"
 banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1489346559/NET.png
 author: "Vishnu"
 date:   2017-03-17 00:01:00
