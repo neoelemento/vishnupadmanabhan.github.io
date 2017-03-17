@@ -6,6 +6,7 @@ banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488592010/js.
 author: "Vishnu"
 date:   2016-05-07 00:01:00
 categories: javascript
+comments: true
 ---
 If you have been reading other posts on this blog, you might see that I am a [fan of JavaScript](http://vishnupadmanabhan.com/javascript-everywhere/). We skimmed through the surface of ES6 in an [earlier post](http://vishnupadmanabhan.com/getting-started-with-es6/). Today we'll go a bit into the functional programming aspect of JavaScript. Concept of functional programming makes programming a joy by saving complication and development time as well.
 

@@ -6,6 +6,7 @@ banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488591689/cbr
 author: "Vishnu"
 date:   2016-02-29 00:13:00
 categories: html css
+comments: true
 ---
 
 While you can design most of the elements like textboxes, button and links on an HTML page, styling checkboxes and radio buttons are not easy. Here is a small hack to style radio button and checkboxes. There might be many ways, but this is just one cool way.

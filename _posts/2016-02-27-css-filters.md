@@ -6,6 +6,7 @@ banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488591817/css
 author: "Vishnu"
 date:   2016-02-27 01:13:00
 categories: css
+comments: true
 ---
 
 Today we take a look at various CSS filters. There was a time when for any kind of web design, Photoshop or Fireworks were the tools. Things like gradients, shadows, filters etc were possible only through image editing tools like Photoshop. So if you are one of them, you know how difficult it was to get a gradient or a shadow by creating images and repeating them - horror! But now, CSS implements most of those effects through a property called *filter*. Let's see how.

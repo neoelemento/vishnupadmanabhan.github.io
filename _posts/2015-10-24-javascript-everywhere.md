@@ -6,6 +6,7 @@ banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488592010/js.
 author: "Vishnu"
 date:   2015-10-24 11:05:00
 categories: javascript
+comments: true
 ---
 ## Retrospect
 For past few years, JavaScript has taken over the programming world like no other language before. From something like this:

@@ -6,6 +6,7 @@ banner: http://res.cloudinary.com/neoelemento/image/upload/v1462390490/blog/prog
 author: "Vishnu"
 date:   2016-02-28 01:13:00
 categories: programming
+comments: true
 ---
 >“Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young.”
 <br >- Henry Ford

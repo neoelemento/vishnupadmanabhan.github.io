@@ -21,6 +21,10 @@ layout: default
             <div class="post-body">
                 {{ content }}
             </div>
+            <hr>
+            {% if page.comments %}
+            <div id="disqus_thread"></div>
+            {% endif %}
         </article>
     </div>
 </section>

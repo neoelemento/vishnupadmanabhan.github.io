@@ -6,6 +6,7 @@ banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488592226/ele
 author: "Vishnu"
 date:   2015-10-29 08:00:00
 categories: javascript
+comments: true
 ---
 ## Creating multiple windows in your electron app
 In my [last post](http://vishnupadmanabhan.com/desktop-apps-with-electron-1/), I wrote about how to get a basic [Electron](http://electron.atom.io/) app up and running. But what do you do if you want a multi-window app? For example, if you want to display various user specific options once you select from the app menu. Let’s see how to get this done.

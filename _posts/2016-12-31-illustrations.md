@@ -3,11 +3,10 @@ layout: post
 title:  "Illustrations"
 excerpt: "Back to learning design. In Inkscape."
 banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488592539/comet.jpg
-attr: <a href="http://vishnupadmanabhan.com">Yours truly</a>
-cheader: "white"
 author: "Vishnu"
 date:   2016-12-31 00:01:00
 categories: design
+comments: true
 ---
 I always had a liking for illustration and design. Back during my school days, I tried creating some graphics in what was then the ultimate tool for graphic design - *MS Paint*. Before you frown upon it, take a look at [this](http://www.smosh.com/smosh-pit/photos/ms-paint){:target="_blank"}!. 
 

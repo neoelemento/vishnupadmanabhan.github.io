@@ -6,6 +6,7 @@ banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1489204848/dev
 author: "Vishnu"
 date:   2017-03-14 00:01:00
 categories: Programming
+comments: true
 ---
 The development industry might be the fastest moving industry in the modern era. Every other day you see people creating new stuff - frameworks, languages etc. This is a good thing, day in and day out efforts are being put into making development a better and an efficient process.
 

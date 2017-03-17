@@ -6,6 +6,7 @@ banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488591100/jek
 author: "Vishnu"
 date:   2017-03-07 00:01:00
 categories: jekyll
+comments: true
 ---
 I recently changed to Windows 10 as my primary operating system. I have been using Jekyll as my blogging platform since a long time now. Hosted on Github Pages, integrates nicely with VSCode as editor. VSCode supports markdown and has git integration too.
 

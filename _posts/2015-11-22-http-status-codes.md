@@ -6,6 +6,7 @@ banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488591916/htt
 author: "Vishnu"
 date:   2015-11-22 08:13:00
 categories: http
+comments: true
 ---
 If you are an Internet user or a developer, you would've come across various status codes as responses. When you search a particular page and it shows up '**404 - not found!**'. What does this mean exactly? Let's take a look at the most commonly seen HTTP responses.
 

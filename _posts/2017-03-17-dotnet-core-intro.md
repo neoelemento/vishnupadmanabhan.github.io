@@ -6,6 +6,7 @@ banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1489346559/NET
 author: "Vishnu"
 date:   2017-03-17 00:01:00
 categories: ASP.NET
+comments: true
 ---
 I programmed for the first time ever back in Turbo C++ days. I was thankful that I choose Computer Science as my major in high school instead of Biology. I knew that I wanted to be doing something with computers for my career. I was fascinated as I wrote simple code into the IDE with bright blue background and overly colourful code syntax highlighting.
 

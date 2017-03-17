@@ -6,6 +6,7 @@ banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488591469/pod
 author: "Vishnu"
 date:   2016-04-02 00:13:00
 categories: programming
+comments: true
 ---
 I love listening to podcasts. I feel they are great learning resources. Especially when you can fill up your otherwise wasted time like commuting to work etc listening to them. I have subscribed to a few of them which I have listed here:
 
