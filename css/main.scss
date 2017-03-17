@@ -12,6 +12,10 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+    text-shadow: #fff 0px 1px 1px;
 }
 
 .navbar{
