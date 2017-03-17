@@ -103,7 +103,7 @@ As you have the first .NET Core app created within your project folder, you'll n
 
 The `ConCore.csproj` is the file that is used for managing dependencies for the project. This file is named after your project name. Earlier Core had a  `project.json` file to handle the dependencies and configurations, but Microsoft went in favour of `csproj` file support MSBuild to enable portable class libraries from .NET Core projects and .NET standard libraries from .NET Framework projects. MSBuild also build large projects. That being said, if you open an old project in Visual Studio 2017, it will upgrade your project to work with the `csproj` filetype. If you open the `csproj` file, you'll see something similar:
 
-```csharp
+```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
