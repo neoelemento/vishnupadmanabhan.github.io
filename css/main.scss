@@ -164,6 +164,7 @@ p code {
 
     img {
         max-width: 100%;
+        margin: auto;
     }
 
     ul li, ol li {
@@ -186,7 +187,8 @@ p code {
     }
 
     figure {
-        margin: 20px 0;
+        margin: 20px auto;
+        text-align: center;
     }
 
     figcaption {
