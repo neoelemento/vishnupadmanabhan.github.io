@@ -2,7 +2,7 @@
 layout: post
 title:  "Illustrations"
 excerpt: "Back to learning design. In Inkscape."
-banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488592539/comet.jpg
+banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1489832428/inkscape.jpg
 author: "Vishnu"
 date:   2016-12-31 00:01:00
 categories: design
