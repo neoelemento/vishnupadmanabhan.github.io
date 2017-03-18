@@ -14,8 +14,6 @@ body {
     font-size: 1.6rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
-    text-shadow: #fff 0px 1px 1px;
 }
 
 .navbar{
@@ -165,6 +163,8 @@ p code {
         word-spacing: .4rem;
         font-weight: 400;
         color: #666666;
+        -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+        text-shadow: #fff 0px 1px 1px;
     }
 
     img {
@@ -209,15 +209,23 @@ p code {
 //     margin: 10px 0 20px 0;
 // }
 
+.footer-container{
+    background-color: #1b1b25;
+}
+
 .footer-content {
     min-height: 20px;
     padding: 20px;
-    text-align: center;
+    color: white;
+}
+
+footer .disclaimer {
+    color: tomato;
 }
 
 .copyright {
     text-align: center;
-    color: salmon;
+    color: lightgreen;
 }
 
 

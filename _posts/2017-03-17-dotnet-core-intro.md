@@ -2,7 +2,7 @@
 layout: post
 title:  ".NET Core - Intro"
 excerpt: "Getting started with .NET Core in VSCode"
-banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1489346559/NET.png
+banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1489831960/NET.jpg
 author: "Vishnu"
 date:   2017-03-17 00:01:00
 categories: ASP.NET
