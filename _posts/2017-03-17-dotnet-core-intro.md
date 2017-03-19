@@ -135,7 +135,7 @@ namespace ConCore
 When you type `dotnet run` at the terminal you get the following output:
 
 ```powershell
-D:\Code\ConCore> dotnet run
+PS D:\Code\ConCore> dotnet run
 Hello World!
 ```
 
@@ -162,7 +162,7 @@ namespace ConCore
 The output when we run the above program will be:
 
 ```powershell
-D:\Code\ConCore> dotnet run
+PS D:\Code\ConCore> dotnet run
 Please enter your name: 
 Harvey
 Hello Harvey
