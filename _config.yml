@@ -21,6 +21,7 @@ sass:
 gems:
   - jemoji
   - jekyll-paginate
+  - jekyll-gravatar
 
 permalink: /:title/
 future: true
