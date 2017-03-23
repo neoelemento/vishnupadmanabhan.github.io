@@ -115,7 +115,7 @@ The `ConCore.csproj` is the file that is used for managing dependencies for the 
 </Project>
 ```
 
-Program.cs
+`Program.cs` file contains the main class that prints `Hello World!` to the console.
 
 ```csharp
 using System;
