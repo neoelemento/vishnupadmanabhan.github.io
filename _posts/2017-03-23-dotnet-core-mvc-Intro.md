@@ -148,7 +148,7 @@ app.UseMvc(routes =>
 
 The above code snippet registers a default route format and also a default route for our app. The name is `default` and template defines the URL structure for our app. If we call the `about` method within our `HomeController`, the URL structure will be `http://localhost:5000/Home/About`.
 
-We have more items withing `Startup.cs` into which we will take a look in upcoming posts.
+We have more items within `Startup.cs` into which we will take a look in upcoming posts.
 
 ## Watching for changes
 So far, after every change, we had to rerun `dotnet run` to see the changes on the browser. If you have worked with other platforms you would've seen the changes instantly reflecting on the browser upon refreshing the page.
