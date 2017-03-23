@@ -12,6 +12,13 @@ In the [previous post](http://vishnupadmanabhan.com/dotnet-core-intro/), we lear
 
 In this post, we will see what happens when we choose `mvc` instead of `console` while we used the `dotnet new` command which we used earlier. But before we jump into creating an MVC app, let's try to take our console app and make it a web app. In order to make it a web app we need to add a web server into it.
 
+### What is MVC pattern?
+The Model-View-Controller is a software architectural pattern that divides an application into three interconnected components namely - Model, View and Controller. MVC patter helps in decoupling of these components in order to have a cleaner code base, reusable components and reduced development time. The MVC pattern is widely used in program development with programming languages such as Java, Smalltalk, C++, Ruby and PHP.
+
+- **Model**: Model represents the logical structure of data and class associated with it. This object model does not contain any information about the user interface. It manages the data, logic and rules of the application. Model implements the logic for the application's data domain. Often, model objects retrieve and store model state in a database.
+- **View**: Views are the components that display the application's user interface. It is a collection of classes representing the elements in the user interface. View can also update the output to the user based on the change in Model. Typically, this UI is created from the data within the model.
+- **Controller**: Controllers are the components that handle user interaction, carry out operations on the model and ultimately select a view to render. Controller connects the model and the view and communicates between the classes in model and view. Controller handles the responses to a user interaction in an application.
+
 ## Web Server - Kestral
 Traditionally ASP.NET apps used the IIS web server to run. IIS Express was a lightweight version of IIS which Visual Studio uses to run and preview apps during development. ASP.NET uses a web server called **Kestrel**. Kestrel is a cross-platform HTTP server based on [libuv](http://libuv.org/){:target="_blank"}, a cross-platform asynchronous I/O library.
 
@@ -66,13 +73,6 @@ namespace ConCore
 ```
 
 Once we run our project now, we see `Hello cool!` displayed in our browser.
-
-### What is MVC pattern?
-The Model-View-Controller is a software architectural pattern that divides an application into three interconnected components namely - Model, View and Controller. MVC patter helps in decoupling of these components in order to have a cleaner code base, reusable components and reduced development time. The MVC pattern is widely used in program development with programming languages such as Java, Smalltalk, C++, Ruby and PHP.
-
-- **Model**: Model represents the logical structure of data and class associated with it. This object model does not contain any information about the user interface. It manages the data, logic and rules of the application. Model implements the logic for the application's data domain. Often, model objects retrieve and store model state in a database.
-- **View**: Views are the components that display the application's user interface. It is a collection of classes representing the elements in the user interface. View can also update the output to the user based on the change in Model. Typically, this UI is created from the data within the model.
-- **Controller**: Controllers are the components that handle user interaction, carry out operations on the model and ultimately select a view to render. Controller connects the model and the view and communicates between the classes in model and view. Controller handles the responses to a user interaction in an application.
 
 ### Dive into Core MVC
 Now that we have seen how to create a basic web app from a console app, lets go ahead and dive into MVC. Back to our terminal, lets type:
@@ -147,6 +147,8 @@ app.UseMvc(routes =>
 ```
 
 The above code snippet registers a default route format and also a default route for our app. The name is `default` and template defines the URL structure for our app. If we call the `about` method within our `HomeController`, the URL structure will be `http://localhost:5000/Home/About`.
+
+We have more items withing `Startup.cs` into which we will take a look in upcoming posts.
 
 ## Watching for changes
 So far, after every change, we had to rerun `dotnet run` to see the changes on the browser. If you have worked with other platforms you would've seen the changes instantly reflecting on the browser upon refreshing the page.

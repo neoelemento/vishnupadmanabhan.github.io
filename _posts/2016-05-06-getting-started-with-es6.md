@@ -53,7 +53,7 @@ Once the installation is done, the `package.json` will look something like this,
 
 Now that we have Babel installed, let's add a build script to our `package.json` so that we can add it to our npm build process.
 
-{% highlight json %}
+```json
 {
    "name": "my-project",
    "version": "1.0.0",
@@ -64,13 +64,13 @@ Now that we have Babel installed, let's add a build script to our `package.json`
      "babel-cli": "^6.0.0"
    }
 }
-{% endhighlight %}
+```
 
 Now, instead of running Babel from command line we can simply run the following command from the terminal and get the transpiling done. Note that the source and destination directories, in this case `src` and `build` respectively are specified as the parameters:
 
-{% highlight bash %}
+```bash
 ~ $ npm run build
-{% endhighlight %}
+```
 
 One thing to note here is that Babel comes with a number of transformations and not just ES6 transformations. Before Babel 6 was released, the transformation to ES6 (ES2015) was included by default. But from Babel 6, you need to be explicit about the transformations that need to be included. This si done by including **presets**. ES6 transformation can be included by adding the `es2015` preset like follows:
 
