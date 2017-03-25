@@ -168,7 +168,7 @@ p code {
 
     img {
         max-width: 100%;
-        margin: auto;
+        margin: 30px auto;
         display: flex;
         align-self: center;
     }
@@ -239,8 +239,6 @@ footer .disclaimer {
     font-size: 1.2rem;
 }
 
-
-
 /* overrides */
 
 .btn-green {
@@ -257,6 +255,10 @@ footer .disclaimer {
 
 .pagination>li>a, .pagination>li>span {
     color: #5cb85c;
+}
+
+.embed-responsive {
+    margin: 30px 0;
 }
 
 /* links */
