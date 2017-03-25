@@ -213,6 +213,28 @@ p code {
     }
 }
 
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNavigation a {
+  display: block;
+  width: 33.33333333%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNavigation .back_home {
+    text-align: center;
+}
+
+.PageNavigation .next {
+  text-align: right;
+}
+
 // .post-body img:not(.emoji) {
 //     width: 100%;
 //     margin: 10px 0 20px 0;
