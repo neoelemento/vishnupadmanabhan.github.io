@@ -166,7 +166,7 @@ p code {
         text-shadow: #fff 0px 1px 1px;
     }
 
-    img {
+    img:not(.emoji) {
         max-width: 100%;
         margin: 30px auto;
         display: flex;
