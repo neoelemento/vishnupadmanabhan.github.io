@@ -156,14 +156,18 @@ p code {
     }
 
     p {
-        font-family: 'VP', sans-serif;
-        font-size: 1.6rem;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.4rem;
         line-height: 1.6;
         word-spacing: .4rem;
         font-weight: 400;
         color: #666666;
         -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
         text-shadow: #fff 0px 1px 1px;
+
+        a {
+            font-weight: 700;
+        }
     }
 
     img:not(.emoji) {
@@ -174,7 +178,7 @@ p code {
     }
 
     ul li, ol li {
-        font-family: 'VP', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         font-size: 1.6rem;
         line-height: 1.6;
         word-spacing: .4rem;
