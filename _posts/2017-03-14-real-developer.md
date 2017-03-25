@@ -2,10 +2,10 @@
 layout: post
 title:  "Real Developer"
 excerpt: "How do we define a real developer?"
-banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1489204848/dev.png
+banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1490427680/beer.jpg
 author: "Vishnu"
 date:   2017-03-14 00:01:00
-categories: Programming
+categories: Beer-Talk
 comments: true
 ---
 The development industry might be the fastest moving industry in the modern era. Every other day you see people creating new stuff - frameworks, languages etc. This is a good thing, day in and day out efforts are being put into making development a better and an efficient process.
