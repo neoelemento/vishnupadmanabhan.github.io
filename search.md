@@ -22,7 +22,7 @@ title: Search
         "title": "{{ post.title | xml_escape }}",
         "author": "{{ post.author | xml_escape }}",
         "categories": '{{ post.categories | xml_escape | strip_html }}',
-        "content": {{ post.content | strip_html | truncatewords: 15 | strip_newlines | jsonify }},
+        "content": {{ post.content | strip_html | truncatewords: 0 | strip_newlines | jsonify }},
         "excerpt": "{{ post.excerpt | xml_escape }}",
         "url": "{{ post.url | xml_escape }}"
       }

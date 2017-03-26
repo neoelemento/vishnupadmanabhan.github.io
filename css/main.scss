@@ -125,6 +125,8 @@ p code {
 
 .post-body {
     padding: 15px 2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     h1 {
         font-size: 4.2rem;
@@ -164,6 +166,8 @@ p code {
         color: #666666;
         -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
         text-shadow: #fff 0px 1px 1px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
 
         a {
             font-weight: 700;
@@ -290,6 +294,10 @@ form.main_search {
 ul.social_links {
     display: flex;
     justify-content: space-around;
+
+    a, a:hover, a:visited, a:focus, a:active {
+        color: #363636;
+    }
 }
 
 form.main_search {
@@ -297,6 +305,12 @@ form.main_search {
         box-shadow: none;
         outline: none;
     }
+}
+
+ul#search-results li, ul#search-results li p {
+    font-family: 'Josefin Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 li.search-list {
