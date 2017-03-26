@@ -265,6 +265,39 @@ footer .disclaimer {
     font-size: 1.2rem;
 }
 
+form.main_search {
+    input {
+        border: 0;
+        border-bottom: 1px #ededed solid;
+        border-radius: 0;
+        background-color: #fff;
+        box-shadow: none;
+    }
+
+    button.btn {
+        border: 0;
+        border: none;
+        border-radius: 0;
+        background-color: #fff !important;
+        box-shadow: none;
+        
+        i {
+            color: #aaa;
+        }
+    }
+}
+
+form.main_search {
+    input.form-control:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+li.search-list {
+    list-style-type: none;
+}
+
 /* overrides */
 
 .btn-green {
@@ -281,6 +314,18 @@ footer .disclaimer {
 
 .pagination>li>a, .pagination>li>span {
     color: #5cb85c;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul ul, ol ul {
+    list-style-type: disc;
+}
+
+ol ol ul, ol ul ul, ul ol ul, ul ul ul {
+    list-style-type: circle;
 }
 
 .embed-responsive {

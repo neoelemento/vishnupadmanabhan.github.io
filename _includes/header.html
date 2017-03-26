@@ -15,6 +15,16 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <form action="/search" method="GET" class="main_search navbar-form">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="query" id="search-box" placeholder="Search">
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-green btn-block"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </span>
+                                </div>
+                            </form>
+                        </li>
                         <li><a href="/about/">about</a></li>
                         <li><a href="/archives/">archives</a></li>
                         <li><a href="http://twitter.com/neoelemento" target="_blank">contact</a></li>
