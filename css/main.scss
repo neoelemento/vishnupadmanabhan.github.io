@@ -287,6 +287,11 @@ form.main_search {
     }
 }
 
+ul.social_links {
+    display: flex;
+    justify-content: space-around;
+}
+
 form.main_search {
     input.form-control:focus {
         box-shadow: none;
@@ -348,13 +353,16 @@ ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 #mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {border:3px solid crimson;}
 
 /* links */
+a, a:hover, a:active, a:focus {
+   outline: 0;
+}
 
-a, a:hover, a:visited, a:active {
+a, a:hover, a:visited, a:active, a:focus {
     color: #5cb85c;
     text-decoration: none;
 }
 
-h2 a, h2 a:hover, h2 a:visited, h2 a:active {
+h2 a, h2 a:hover, h2 a:visited, h2 a:active, h2 a:focus {
     color: black;
     text-decoration: none;
 }
