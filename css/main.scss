@@ -305,6 +305,14 @@ li.search-list {
     border-color: #e7e7e7;
 }
 
+.navbar-form {
+    border: none;
+}
+
+.navbar-collapse.in {
+    overflow-y: inherit;
+}
+
 .btn-green {
     color: #1b1b25;
     background-color: lightgreen;
