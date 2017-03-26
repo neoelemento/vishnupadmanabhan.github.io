@@ -11,6 +11,8 @@ I have been working in tech industry since I graduated college and been coding b
 
 My love towards computers started when my dad got me an assembled Pentium 4 PC for getting good grades in my 10th. I started programming in Turbo C++ (yes the same blue background IDE) for my school. I built HTML pages and websites using MicroSoft FrontPage. Since then I was hooked to everything programming.
 
-In my day job I work as a Program Manager for Dell on their Dell.com platform and by night I am a programmer and blogger working on my side projects. Also anything I write here does not reflect the opinion of my employer in any way.
+In my day job I work as a Program Manager for Dell on their Dell.com platform and by night I am a programmer and blogger working on my side projects for fun and education. Also anything I write here does not reflect the opinion of my employer in any way.
 
 >Ever loved someone so much, you would do anything for them? Yeah, well make that someone yourself and do whatever the hell you want.<br> - Harvey Specter (Suits)
+
+Currently I am into JavaScript, ASP.NET and CSS. My posts will be reflecting my learning on these technologies.
