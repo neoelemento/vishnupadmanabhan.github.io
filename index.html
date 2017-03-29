@@ -31,21 +31,6 @@ title: Vishnu Padmanabhan's code blog
                             <li><a tabindex="0" role="button" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="vp@<thisdomain>"><i class="fa fa-envelope-o"></i></a></li>
                         </ul>
 
-                        <!--<form action="/search" method="GET">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="query" id="search_box" placeholder="eg. javascript, jekyll etc">
-                            </div>                         
-                            <button type="submit" class="btn btn-green btn-block">Search</button>
-                        </form>                  -->
-
-                        <!--<form action="/search" method="GET" class="main_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" name="query" id="search-box" placeholder="Search the site">
-                                <span class="input-group-btn">
-                                    <button type="submit" class="btn btn-green btn-block"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </span>
-                            </div>
-                        </form>-->
 
                         <!-- Begin MailChimp Signup Form -->
                         <!--<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
@@ -83,6 +68,7 @@ title: Vishnu Padmanabhan's code blog
                               {% else %}
                                 <img src="http://res.cloudinary.com/neoelemento/image/upload/v1462390490/blog/programmer-min.jpg" alt="" class="img-circle">
                               {% endif %}  
+                              <p class="post-meta-date">{{ post.date | date: "%B %d, %Y" }}</p>
                             </div>
                             <div class="col-md-9 post-content">
                               {% for category in post.categories %}<span class="post-category"><a href="/archives/#{{ category }}">{{ category }}</a></span> {% if forloop.last == false %} {% endif %}{% endfor %}
