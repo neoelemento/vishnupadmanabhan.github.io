@@ -2,10 +2,10 @@
 layout: post
 title:  "Podcasts I listen to"
 excerpt: "A list of excellent podcasts I listen to."
-banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1488591469/podcast.jpg
+banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1490427680/beer.jpg
 author: "Vishnu"
 date:   2016-04-02 00:13:00
-categories: programming
+categories: Beer-Talk
 comments: true
 ---
 I love listening to podcasts. I feel they are great learning resources. Especially when you can fill up your otherwise wasted time like commuting to work etc listening to them. I have subscribed to a few of them which I have listed here:
