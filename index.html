@@ -62,9 +62,9 @@ title: Vishnu Padmanabhan's code blog
                       {% for post in paginator.posts %}
                       <article class="single-article">
                         <div class="row">
-                            <div class="col-md-3 post-meta">
+                            <div class="col-md-3 post-meta hidden-xs hidden-sm hidden-md">
                               {% if post.banner %}
-                                <img src="{{ post.banner }}" alt="" class="img-circle hidden-xs hidden-md">
+                                <img src="{{ post.banner }}" alt="" class="img-circle">
                               {% else %}
                                 <img src="http://res.cloudinary.com/neoelemento/image/upload/v1462390490/blog/programmer-min.jpg" alt="" class="img-circle">
                               {% endif %}  
