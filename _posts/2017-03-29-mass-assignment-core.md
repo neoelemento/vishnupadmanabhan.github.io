@@ -110,4 +110,4 @@ public class User
 
 By using `ModelMetaData` attribute, you are allowing to separate all the annotations and metadata to a different class while keeping the `BindingUser` and `User` distinct. The thing to note here is that there is an implicit contract between the models now. Renaming `Name` to `FullName` on your `User` model will remove all the validation attributes as there will be no more matching contract.
 
-There are few other ways of preventing mass assignment as well. But these are the ones I personally feel are the simpler once. Use them as you feel fit.
+There are few other ways of preventing mass assignment as well. But these are the ones I personally feel are the simpler ones. Use them as you feel fit.
