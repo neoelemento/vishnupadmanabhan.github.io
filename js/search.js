@@ -41,9 +41,9 @@
       this.field('id');
       this.field('title', { boost: 10 });
       this.field('author');
-      this.field('categories');
+      this.field('categories', { boost: 2 });
       this.field('content');
-      this.field('excerpt');
+      this.field('excerpt', { boost: 5 });
     });
 
     for (var key in window.store) {
