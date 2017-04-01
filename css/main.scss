@@ -266,9 +266,9 @@ footer .disclaimer {
     color: tomato;    
 }
 
-.copyright {
+.copyright, .copyright-link {
     text-align: center;
-    color: lightgreen;
+    color: lightgreen !important;
     font-size: 1.2rem;
 }
 
