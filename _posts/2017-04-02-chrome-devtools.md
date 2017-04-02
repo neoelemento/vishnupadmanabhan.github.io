@@ -82,7 +82,6 @@ console.dir(p);
 **Grouping**: When you have to console related information about different items, there is a good chance that it gets confusing and difficult to read and understand the relationship. With `console.group()`, you'll be able to group together related information and make it easier to read.
 
 ```javascript
-
 let cars = [
     { name: 'Aston Martin', country: 'UK' },
     { name: 'Jaguar', country: 'UK' },
@@ -109,7 +108,7 @@ cars.forEach(car => {
     console.groupEnd(`${car.name}`);
 });
 
-// With goruping collapsed
+// With grouping collapsed
 cars.forEach(car => {
     console.groupCollapsed(`${car.name}`);
     console.log(`This is ${car.name}`);
