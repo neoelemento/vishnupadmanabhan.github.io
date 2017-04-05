@@ -2,7 +2,7 @@
 layout: post
 title:  "Charts using Chart.js and Laravel"
 excerpt: "Create data driven charts using Chart.js and Laravel"
-banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1490433015/chart.jpg
+banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1491410797/chartjs.jpg
 author: "Vishnu"
 date:   2016-03-01 00:13:00
 categories: chartjs
