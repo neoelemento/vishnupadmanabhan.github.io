@@ -272,6 +272,20 @@ footer .disclaimer {
     font-size: 1.2rem;
 }
 
+footer .social-links ul {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    li {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            color: lightslategray;
+        }
+    }
+}
+
 form.main_search {
     input {
         border: 0;
