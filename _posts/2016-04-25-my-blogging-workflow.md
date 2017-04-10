@@ -39,7 +39,6 @@ Initially when I started with Jekyll, I used a plain template that comes with ba
 The folder structure of a Jekyll installation has the following folder structure:
 
 ```bash
-
 ├── _drafts
 |   ├── my-favourite-car.md
 |   └── i-love-technology.md
