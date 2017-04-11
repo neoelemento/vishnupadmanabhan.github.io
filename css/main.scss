@@ -211,6 +211,56 @@ p code {
         }
     }
 
+    table {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.6;
+        word-spacing: .4rem;
+        font-weight: 400;
+        -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+        text-shadow: #fff 0px 1px 1px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        width: 100%;
+        display: table;
+        border-collapse: collapse;
+        border: none;
+        margin-bottom: 25px;
+
+        thead {
+            border-bottom: 1px solid #efefef;
+            display: table-header-group;
+            vertical-align: middle;
+            border-color: inherit;
+        }
+
+        tbody {
+            display: table-row-group;
+            vertical-align: middle;
+            border-color: inherit;
+
+            tr {
+                display: table-row;
+                vertical-align: inherit;
+                border-color: inherit;
+            }
+
+            th {
+                font-weight: bold;
+            }
+
+            td, th {
+                padding: 15px 5px;
+                display: table-cell;
+                text-align: left;
+                vertical-align: middle;
+                border-radius: 2px;
+                border: none;
+            }
+        }
+
+    }
+
     figure {
         margin: 20px auto;
         text-align: center;
