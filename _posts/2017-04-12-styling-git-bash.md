@@ -5,7 +5,7 @@ excerpt: "How to style and modify your git-bash prompt"
 banner: http://res.cloudinary.com/vishnupadmanabhan/image/upload/v1491716273/git-win.png
 author: "Vishnu"
 date:   2017-04-12 00:00:10
-categories: Beer-Talk
+categories: Git
 comments: true
 ---
 When it comes to the tools I use, I like minimalism. I like to have the bare minimum of everything and make them look good. This is one of the reasons though an IDE can be really useful in some cases, I always stick to code editors like **VSCode** that I currently use.
