@@ -159,4 +159,12 @@ This is how it looks like after all the cosmetic changes:
   <figcaption>Final Git-Bash</figcaption>
 </figure>
 
+Here is a little screencast I tried making in a free app (hence the big ass watermark!) to give an overview of what I listed in the post. It might act as a suppliment for the post. Give it a watch. First time screencasting with a bout of cold, so watch out for :poop:
+
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://www.youtube.com/embed/rSGpbmmBugc?rel=0&amp;showinfo=0" frameborder="0"></iframe>
+</div>
+
+
+
 So there you have it, your wonderful looking git-bash nicely integrated with your VSCode. Go play around with it, add your own symbols to the prompt using character map in windows.
