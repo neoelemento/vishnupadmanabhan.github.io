@@ -70,13 +70,6 @@ console.error('This is a error!');
   <figcaption>Console Warning, Info and Error</figcaption>
 </figure>
 
-**Element vs Properties**:
-
-```javascript
-console.log(p);
-console.dir(p);
-```
-
 ---
 
 **Grouping**: When you have to console related information about different items, there is a good chance that it gets confusing and difficult to read and understand the relationship. With `console.group()`, you'll be able to group together related information and make it easier to read.
@@ -138,3 +131,7 @@ More clearer when used with `console.groupCollapsed`:
 ---
 
 So there you have it, few (if not many) Chrome DevTools tricks. Try them out during your new project and see which of them are useful.
+
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://www.youtube.com/embed/xfay8iwdxMs?rel=0&amp;showinfo=0" frameborder="0"></iframe>
+</div>
